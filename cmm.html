@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        .community-image {
+            margin: 20px auto;
+            text-align: center;
+            width: 100%;
+            position: relative;
+        }
+
+        .image-scroll-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .scroll-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            flex: 0 0 auto;
+            width: 300px;
+            display: none; /* Initially hide all images */
+        }
+
+        .scroll-image.active {
+            display: block; /* Show the active image */
+        }
+
+        button {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 24px;
+            padding: 10px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1;
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
+
+        button:hover {
+            background-color: rgba(255, 255, 255, 1);
+        }
+    </style>
+</head>
+<body>
+    <div class="community-image">
+        <div class="image-scroll-container">
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <img src="add 1.jpg" alt="Community Image 1" class="scroll-image">
+            <img src="add 2.jpg" alt="Community Image 2" class="scroll-image">
+            <img src="PROPE ADDDDDDDTER.jpg" alt="Community Image 3" class="scroll-image">
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+    </div>
+
+    <script>
+        let currentIndex = 0; // Current image index
+        const images = document.querySelectorAll('.scroll-image'); // Get all images
+
+        // Show the first image
+        images[currentIndex].classList.add('active');
+
+        // Function to move to the next or previous image
+        function moveSlide(direction) {
+            // Hide the current image
+            images[currentIndex].classList.remove('active');
+
+            // Update the current index
+            currentIndex += direction;
+
+            // Loop around the images
+            if (currentIndex < 0) {
+                currentIndex = images.length - 1; // Go to the last image
+            } else if (currentIndex >= images.length) {
+                currentIndex = 0; // Go back to the first image
+            }
+
+            // Show the new current image
+            images[currentIndex].classList.add('active');
+        }
+    </script>
+</body>
+</html>
