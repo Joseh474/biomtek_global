@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arduino for Medical Students</title>
+    <link rel="stylesheet" href="arduinno.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0
+,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Arduino for Medical Students</h1>
+        <nav>
+            <ul>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#store">Store</a></li>
+                <li><a href="#cart">Cart</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="education">
+        <h2>Why Choose Arduino for Your Projects?</h2>
+        <p>
+            At <strong>BIOMTEK</strong>, we understand the importance of hands-on learning in the fields of medical engineering 
+            and technology. That's why we encourage all medical engineering students to consider Arduino as a vital tool in your educational journey. 
+        </p>
+        <p>
+            Our <strong>Learning Solutions</strong> provide a comprehensive approach to STEAM (Science, Technology, Engineering, Arts,
+             and Mathematics) education, guiding you from middle school through university. These solutions are designed to increase in complexity, ensuring that you are continually challenged as you develop your skills.
+        </p>
+        <img src="mega.jpeg" alt="Arduino Learning Solutions" class="responsive">
+        <p>
+            Start your coding journey with block-based coding and seamlessly transition to MicroPython coding, allowing for endless exploration and learning opportunities.
+        </p>
+        <img src="nano.jpeg" alt="Coding with Arduino" class="responsive">
+        <p>
+            Meet the <strong>Alvik Robot</strong>, inspired by Arduino's philosophy of simplifying complex technology. This cross-discipline tool bridges 
+            the gap between education and the future world of robotics, powered by the Arduino Nano ESP32 and equipped with high-quality, integrated sensors.
+      
+    <section id="store">
+        <h2>Arduino Kits and Components for Sale</h2>
+        <div class="categories">
+            <!-- Arduino Boards -->
+            <div class="category">
+                <h3>Arduino Boards</h3>
+                <div class="product-container">
+                    <div class="product">
+                        <img src="Arduino Uno (2).jpeg" alt="Arduino Uno">
+                        <h3>Arduino Uno</h3>
+                        <p>A versatile and beginner-friendly board ideal for various projects.</p>
+                        <button aria-label="Add Arduino Uno to cart" onclick="addToCart('Arduino Uno')">Add to Cart</button>
+                    </div>
+                    <div class="product">
+                        <img src="Arduino Mega.jpeg" alt="Arduino Mega">
+                        <h3>Arduino Mega</h3>
+                        <p>Perfect for complex projects requiring more memory and I/O pins.</p>
+                        <button aria-label="Add Arduino Mega to cart" onclick="addToCart('Arduino Mega')">Add to Cart</button>
+                    </div>
+                    <div class="product">
+                        <img src="Arduino Nano.jpeg" alt="Arduino Nano">
+                        <h3>Arduino Nano</h3>
+                        <p>A compact board suitable for breadboard projects and small designs.</p>
+                        <button aria-label="Add Arduino Nano to cart" onclick="addToCart('Arduino Nano')">Add to Cart</button>
+                    </div>
+                    <div class="product">
+                        <img src="Arduino Leonardo.jpeg" alt="Arduino Leonardo">
+                        <h3>Arduino Leonardo</h3>
+                        <p>Features native USB communication, useful for HID device projects.</p>
+                        <button aria-label="Add Arduino Leonardo to cart" onclick="addToCart('Arduino Leonardo')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div> this is the most hardest or rather the extream hardest thing for someone to opt on doing that is you must a very </div>
+    
+            <!-- Arduino Kits -->
+            <div class="category">
+                <h3>Arduino Kits</h3>
+                <div class="product-container">
+                    <div class="product">
+                        <img src="ard6.jpeg" alt="Arduino Starter Kit">
+                        <h3>Arduino Starter Kit</h3>
+                        <p>Includes essential components and a guide for beginners.</p>
+                        <button aria-label="Add Arduino Starter Kit to cart" onclick="addToCart('Arduino Starter Kit')">Add to Cart</button>
+                    </div>
+                    <div class="product">
+                        <img src="ard7.jpeg" alt="Arduino IoT Kit">
+                        <h3>Arduino IoT Kit</h3>
+                        <p>Learn Internet of Things (IoT) with sensors and WiFi-enabled boards.</p>
+                        <button aria-label="Add Arduino IoT Kit to cart" onclick="addToCart('Arduino IoT Kit')">Add to Cart</button>
+                    </div>
+                    <div class="product">
+                        <img src="ard8.jpeg" alt="Arduino Robotics Kit">
+                        <h3>Arduino Robotics Kit</h3>
+                        <p>Build and program your own robots with motors, sensors, and wheels.</p>
+                        <button aria-label="Add Arduino Robotics Kit to cart" onclick="addToCart('Arduino Robotics Kit')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Components -->
+            <div class="category">
+                <h3>Components</h3>
+                <div class="product-container">
+                    <div class="product">
+                        <img src="resistor.jpg" alt="Resistors">
+                        <h3>Resistors</h3>
+                        <p>Available in various resistance values for circuit designs.</p>
+                        <button aria-label="Add Resistors to cart" onclick="addToCart('Resistors')">Add to Cart</button>
+                    </div>
+                    <div class="product">
+                        <img src="capacitor.jpg" alt="Capacitors">
+                        <h3>Capacitors</h3>
+                        <p>Essential for filtering, energy storage, and signal smoothing.</p>
+                        <button aria-label="Add Capacitors to cart" onclick="addToCart('Capacitors')">Add to Cart</button>
+                    </div>
+                    <div class="product">
+                        <img src="transistor.jpg" alt="Transistors">
+                        <h3>Transistors</h3>
+                        <p>Used as amplifiers, switches, or voltage regulators in circuits.</p>
+                        <button aria-label="Add Transistors to cart" onclick="addToCart('Transistors')">Add to Cart</button>
+                    </div>
+                    <div class="product">
+                        <img src="breadboard.jpg" alt="Breadboards">
+                        <h3>Breadboards</h3>
+                        <p>A tool for prototyping and testing electronic circuits.</p>
+                        <button aria-label="Add Breadboards to cart" onclick="addToCart('Breadboards')">Add to Cart</button>
+                    </div>
+                    <div class="product">
+                        <img src="sensor.jpg" alt="Sensors">
+                        <h3>Sensors</h3>
+                        <p>Includes temperature, motion, and light sensors for projects.</p>
+                        <button aria-label="Add Sensors to cart" onclick="addToCart('Sensors')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="cart">
+        <h2>Your Cart</h2>
+        <div id="cart-display">
+            <p>Your cart is empty.</p>
+        </div>
+        <form id="cart-form" method="POST" action="submit_cart.php">
+            <input type="hidden" name="cart_data" id="cart-data">
+            <button type="button" onclick="submitCart()">Submit Cart</button>
+        </form>
+        <button onclick="clearCart()">Clear Cart</button>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or need assistance, feel free to reach out!</p>
+        <p>Email: <a href="mailto:info@biomtekglobal.co.ke">info@biomtekglobal.co.ke</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 BIOMTEK. All rights reserved.</p>
+    </footer>
+
+    <script src="arduinno.js"></script>
+</body>
+</html>
